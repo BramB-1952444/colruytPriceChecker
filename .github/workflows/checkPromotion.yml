@@ -1,10 +1,12 @@
-name: Check promotion
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '0 9 * * *'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -27,4 +29,6 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
     - name: execute script
+      env:
+        PBKEY: ${{ secrets.PBKEY }}
       run: python stella.py
