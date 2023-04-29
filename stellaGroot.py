@@ -1,7 +1,10 @@
 from urllib import response
 import requests
 from pushbullet import Pushbullet
+from dotenv import load_dotenv
 from os import environ
+
+load_dotenv()
 
 pb = Pushbullet(environ['PBKEY'])
 
