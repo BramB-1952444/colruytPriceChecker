@@ -4,7 +4,7 @@ from pushbullet import Pushbullet
 
 pb = Pushbullet("Pushbullet api key")
 
-PRODUCT_ID = "369"
+PRODUCT_ID = "854312"
 PLACE_ID = "620"
 API = "https://ecgproductmw.colruyt.be/ecgproductmw/v2/nl/products/" + PRODUCT_ID + "?clientCode=clp&placeId=" + PLACE_ID
 

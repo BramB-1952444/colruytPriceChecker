@@ -28,3 +28,5 @@ jobs:
       run: pip install -r requirements.txt
     - name: execute script
       run: python stella.py
+    - name: execute script
+      run: python stellaGroot.py
