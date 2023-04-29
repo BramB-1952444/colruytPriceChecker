@@ -32,4 +32,6 @@ jobs:
         PBKEY: ${{ secrets.PBKEY }}
       run: python stella.py
     - name: execute script
+      env:
+        PBKEY: ${{ secrets.PBKEY }}
       run: python stellaGroot.py
