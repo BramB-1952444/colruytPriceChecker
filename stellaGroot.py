@@ -1,8 +1,9 @@
 from urllib import response
 import requests
 from pushbullet import Pushbullet
+from os import environ
 
-pb = Pushbullet("Pushbullet api key")
+pb = Pushbullet(environ['PBKEY'])
 
 PRODUCT_ID = "854312"
 PLACE_ID = "620"
